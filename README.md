@@ -1,7 +1,3 @@
-<p align="center">
-  <a href="https://passxapi.com"><img src="https://passxapi.com/logo.png" alt="PassXAPI" width="200"></a>
-</p>
-
 <h1 align="center">PassXAPI Python SDK</h1>
 
 <p align="center">
@@ -19,7 +15,8 @@
   <a href="https://github.com/passxapi/passxapi-python">Python</a> ·
   <a href="https://github.com/passxapi/passxapi-node">Node.js</a> ·
   <a href="https://passxapi.com/docs">API Docs</a> ·
-  <a href="https://passxapi.com/services">Pricing</a>
+  <a href="https://passxapi.com/services">Pricing</a> ·
+  <a href="https://github.com/passxapi/passxapi-python/blob/main/README_zh.md">中文文档</a>
 </p>
 
 ---
