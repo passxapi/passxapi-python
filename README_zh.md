@@ -20,6 +20,50 @@
 
 ---
 
+## 安装
+
+```bash
+pip install passxapi
+```
+
+要求 Python 3.7+，唯一依赖：`requests`。
+
+## 快速开始
+
+1. 前往 [www.passxapi.com](https://www.passxapi.com) [注册账号](https://www.passxapi.com/login) — 免费，无需信用卡
+2. 在控制台 [创建 API Key](https://www.passxapi.com/app/api-keys)
+3. 安装：`pip install passxapi`
+
+```python
+from passxapi import PassXAPI
+
+client = PassXAPI("YOUR_API_KEY")
+
+result = client.cloudflare_turnstile(
+    target_url="https://example.com",
+    proxy="http://user:pass@ip:port",
+    site_key="0x4AAAAAAA...",
+)
+
+print(result["token"])       # 验证 token
+print(result["cookies"])     # {"cf_clearance": "..."}
+print(result["ua"])          # 需要使用的 User-Agent
+```
+
+---
+
+## 配置
+
+```python
+client = PassXAPI(
+    api_key="YOUR_API_KEY",
+    polling_interval=1.5,  # 轮询间隔秒数（默认 1.5）
+    timeout=120.0,         # 最大等待秒数（默认 120）
+)
+```
+
+---
+
 ## 支持的验证码类型
 
 | 类型 | 方法 | 平均耗时 | 常见网站 |
@@ -74,6 +118,8 @@
 
 - [安装](#安装)
 - [快速开始](#快速开始)
+- [配置](#配置)
+- [支持的验证码类型](#支持的验证码类型)
 - [验证码求解](#验证码求解)
   - [reCAPTCHA v3](#recaptcha-v3)
   - [hCaptcha](#hcaptcha)
@@ -90,43 +136,10 @@
   - [其他类型](#其他类型)
 - [Webhook 回调](#webhook-回调)
 - [账户与计费](#账户与计费)
-- [配置](#配置)
 - [错误处理](#错误处理)
 - [底层 API](#底层-api)
 - [从 2Captcha 迁移](#从-2captcha-迁移)
 - [相关链接](#相关链接)
-
----
-
-## 安装
-
-```bash
-pip install passxapi
-```
-
-要求 Python 3.7+，唯一依赖：`requests`。
-
-## 快速开始
-
-```python
-from passxapi import PassXAPI
-
-client = PassXAPI("YOUR_API_KEY")
-
-result = client.cloudflare_turnstile(
-    target_url="https://example.com",
-    proxy="http://user:pass@ip:port",
-    site_key="0x4AAAAAAA...",
-)
-
-print(result["token"])       # 验证 token
-print(result["cookies"])     # {"cf_clearance": "..."}
-print(result["ua"])          # 需要使用的 User-Agent
-```
-
-1. [注册账号](https://www.passxapi.com/login) — 免费，无需信用卡
-2. [创建 API Key](https://www.passxapi.com/app/api-keys)
-3. `pip install passxapi`
 
 ---
 
@@ -444,18 +457,6 @@ stats = client.get_spending_stats(queue="cloudflare_turnstile")
 for p in client.get_pricing():
     print(f"{p['name']}: ${p['price_per_solve']}/次, "
           f"~{p['avg_solve_time']}秒, 成功率{p['success_rate']}%")
-```
-
----
-
-## 配置
-
-```python
-client = PassXAPI(
-    api_key="YOUR_API_KEY",
-    polling_interval=1.5,  # 轮询间隔秒数（默认 1.5）
-    timeout=120.0,         # 最大等待秒数（默认 120）
-)
 ```
 
 ---

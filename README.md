@@ -21,6 +21,50 @@
 
 ---
 
+## Installation
+
+```bash
+pip install passxapi
+```
+
+Requires Python 3.7+. Only dependency: `requests`.
+
+## Quick Start
+
+1. [Sign up](https://www.passxapi.com/login) at [www.passxapi.com](https://www.passxapi.com) — free, no credit card
+2. [Create API key](https://www.passxapi.com/app/api-keys) in your dashboard
+3. Install: `pip install passxapi`
+
+```python
+from passxapi import PassXAPI
+
+client = PassXAPI("YOUR_API_KEY")
+
+result = client.cloudflare_turnstile(
+    target_url="https://example.com",
+    proxy="http://user:pass@ip:port",
+    site_key="0x4AAAAAAA...",
+)
+
+print(result["token"])       # Verification token
+print(result["cookies"])     # {"cf_clearance": "..."}
+print(result["ua"])          # User-Agent string to use
+```
+
+---
+
+## Configuration
+
+```python
+client = PassXAPI(
+    api_key="YOUR_API_KEY",
+    polling_interval=1.5,  # Seconds between polls (default: 1.5)
+    timeout=120.0,         # Max wait in seconds (default: 120)
+)
+```
+
+---
+
 ## Supported CAPTCHA Types
 
 | Type | Method | Avg. Time | Sites |
@@ -75,6 +119,8 @@
 
 - [Installation](#installation)
 - [Quick Start](#quick-start)
+- [Configuration](#configuration)
+- [Supported CAPTCHA Types](#supported-captcha-types)
 - [Solve CAPTCHA](#solve-captcha)
   - [reCAPTCHA v3](#recaptcha-v3)
   - [hCaptcha](#hcaptcha)
@@ -100,43 +146,10 @@
   - [TLS Forward](#tls-forward)
 - [Webhook Callback](#webhook-callback)
 - [Account & Billing](#account--billing)
-- [Configuration](#configuration)
 - [Error Handling](#error-handling)
 - [Low-Level API](#low-level-api)
 - [Migration from 2Captcha](#migration-from-2captcha)
 - [Links](#links)
-
----
-
-## Installation
-
-```bash
-pip install passxapi
-```
-
-Requires Python 3.7+. Only dependency: `requests`.
-
-## Quick Start
-
-```python
-from passxapi import PassXAPI
-
-client = PassXAPI("YOUR_API_KEY")
-
-result = client.cloudflare_turnstile(
-    target_url="https://example.com",
-    proxy="http://user:pass@ip:port",
-    site_key="0x4AAAAAAA...",
-)
-
-print(result["token"])       # Verification token
-print(result["cookies"])     # {"cf_clearance": "..."}
-print(result["ua"])          # User-Agent string to use
-```
-
-1. [Sign up](https://www.passxapi.com/login) — free, no credit card
-2. [Create API key](https://www.passxapi.com/app/api-keys)
-3. `pip install passxapi`
 
 ---
 
@@ -621,18 +634,6 @@ stats = client.get_spending_stats(queue="cloudflare_turnstile")
 for p in client.get_pricing():
     print(f"{p['name']}: ${p['price_per_solve']}/solve, "
           f"~{p['avg_solve_time']}s, {p['success_rate']}%")
-```
-
----
-
-## Configuration
-
-```python
-client = PassXAPI(
-    api_key="YOUR_API_KEY",
-    polling_interval=1.5,  # Seconds between polls (default: 1.5)
-    timeout=120.0,         # Max wait in seconds (default: 120)
-)
 ```
 
 ---
