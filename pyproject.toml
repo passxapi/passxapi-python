@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "passxapi"
-version = "2.0.0"
+version = "2.0.1"
 description = "Official Python SDK for PassXAPI — solve reCAPTCHA, hCaptcha, Cloudflare, Akamai, PerimeterX, Kasada, DataDome, Shape and 27 anti-bot types"
 readme = "README.md"
 license = {text = "MIT"}
@@ -34,9 +34,9 @@ classifiers = [
 dependencies = ["requests>=2.20.0"]
 
 [project.urls]
-Homepage = "https://passxapi.com"
-Documentation = "https://passxapi.com/docs"
-"Get API Key" = "https://passxapi.com/app/api-keys"
+Homepage = "https://www.passxapi.com"
+Documentation = "https://www.passxapi.com/docs"
+"Get API Key" = "https://www.passxapi.com/app/api-keys"
 Repository = "https://github.com/passxapi/passxapi-python"
 Issues = "https://github.com/passxapi/passxapi-python/issues"
 

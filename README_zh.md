@@ -1,21 +1,21 @@
 <h1 align="center">PassXAPI Python SDK</h1>
 
 <p align="center">
-  <b><a href="https://passxapi.com">PassXAPI</a> 官方 Python SDK — 验证码 & 反机器人自动化解决方案</b>
+  <b><a href="https://www.passxapi.com">PassXAPI</a> 官方 Python SDK — 验证码 & 反机器人自动化解决方案</b>
 </p>
 
 <p align="center">
   <a href="https://pypi.org/project/passxapi/"><img src="https://img.shields.io/pypi/v/passxapi?color=blue" alt="PyPI"></a>
   <a href="https://pypi.org/project/passxapi/"><img src="https://img.shields.io/pypi/pyversions/passxapi" alt="Python"></a>
   <a href="https://github.com/passxapi/passxapi-python/blob/main/LICENSE"><img src="https://img.shields.io/github/license/passxapi/passxapi-python" alt="License"></a>
-  <a href="https://passxapi.com/docs"><img src="https://img.shields.io/badge/docs-API%20Reference-green" alt="Docs"></a>
+  <a href="https://www.passxapi.com/docs"><img src="https://img.shields.io/badge/docs-API%20Reference-green" alt="Docs"></a>
 </p>
 
 <p align="center">
   <a href="https://github.com/passxapi/passxapi-python/blob/main/README.md">English</a> ·
   <b>中文</b> ·
-  <a href="https://passxapi.com/docs">API 文档</a> ·
-  <a href="https://passxapi.com/services">价格</a>
+  <a href="https://www.passxapi.com/docs">API 文档</a> ·
+  <a href="https://www.passxapi.com/services">价格</a>
 </p>
 
 ---
@@ -124,8 +124,8 @@ print(result["cookies"])     # {"cf_clearance": "..."}
 print(result["ua"])          # 需要使用的 User-Agent
 ```
 
-1. [注册账号](https://passxapi.com/login) — 免费，无需信用卡
-2. [创建 API Key](https://passxapi.com/app/api-keys)
+1. [注册账号](https://www.passxapi.com/login) — 免费，无需信用卡
+2. [创建 API Key](https://www.passxapi.com/app/api-keys)
 3. `pip install passxapi`
 
 ---
@@ -141,7 +141,7 @@ print(result["ua"])          # 需要使用的 User-Agent
 
 ### reCAPTCHA v3
 
-> Google, YouTube, LinkedIn, Steam, PayPal, Binance · [API 文档 →](https://passxapi.com/docs)
+> Google, YouTube, LinkedIn, Steam, PayPal, Binance · [API 文档 →](https://www.passxapi.com/docs)
 
 ```python
 result = client.recaptcha_v3(
@@ -167,7 +167,7 @@ result = client.recaptcha_v3(
 
 ### hCaptcha
 
-> Cloudflare, Discord, Epic Games, Coinbase, NordVPN · [API 文档 →](https://passxapi.com/docs)
+> Cloudflare, Discord, Epic Games, Coinbase, NordVPN · [API 文档 →](https://www.passxapi.com/docs)
 
 ```python
 result = client.hcaptcha(
@@ -181,7 +181,7 @@ result = client.hcaptcha(
 
 ### hCaptcha Pro
 
-> Cloudflare Enterprise, Coinbase, Binance, Kraken · [API 文档 →](https://passxapi.com/docs)
+> Cloudflare Enterprise, Coinbase, Binance, Kraken · [API 文档 →](https://www.passxapi.com/docs)
 
 ```python
 result = client.hcaptcha_pro(
@@ -194,7 +194,7 @@ result = client.hcaptcha_pro(
 
 ### Cloudflare Turnstile
 
-> DHL, Notion, Canva, Vercel, GitLab, Figma, HubSpot · [API 文档 →](https://passxapi.com/docs)
+> DHL, Notion, Canva, Vercel, GitLab, Figma, HubSpot · [API 文档 →](https://www.passxapi.com/docs)
 
 ```python
 result = client.cloudflare_turnstile(
@@ -208,7 +208,7 @@ result = client.cloudflare_turnstile(
 
 ### Cloudflare WAF
 
-> Shopify, Medium, Discord, OpenAI, Notion, Figma · [API 文档 →](https://passxapi.com/docs)
+> Shopify, Medium, Discord, OpenAI, Notion, Figma · [API 文档 →](https://www.passxapi.com/docs)
 
 ```python
 result = client.cloudflare_waf(
@@ -222,7 +222,7 @@ result = client.cloudflare_waf(
 
 ### Akamai
 
-> Nike, Adidas, Delta Airlines, Walmart, Costco, Airbnb · [API 文档 →](https://passxapi.com/docs)
+> Nike, Adidas, Delta Airlines, Walmart, Costco, Airbnb · [API 文档 →](https://www.passxapi.com/docs)
 
 ```python
 result = client.akamai(
@@ -237,7 +237,7 @@ result = client.akamai(
 
 ### PerimeterX
 
-> Zillow, Craigslist, Indeed, StockX, Wayfair, Reddit · [API 文档 →](https://passxapi.com/docs)
+> Zillow, Craigslist, Indeed, StockX, Wayfair, Reddit · [API 文档 →](https://www.passxapi.com/docs)
 
 **静默模式**（无可视验证）：
 ```python
@@ -267,7 +267,7 @@ result = client.perimeterx_challenge(
 
 ### Kasada
 
-> Kick, bet365, DraftKings, FanDuel, PlayStation, Twitch · [API 文档 →](https://passxapi.com/docs)
+> Kick, bet365, DraftKings, FanDuel, PlayStation, Twitch · [API 文档 →](https://www.passxapi.com/docs)
 
 ```python
 # ct 模式
@@ -296,7 +296,7 @@ result = client.kasada_tl_payload(
 
 ### DataDome
 
-> Reddit, SoundCloud, Rakuten, TripAdvisor, Vinted, Hermes · [API 文档 →](https://passxapi.com/docs)
+> Reddit, SoundCloud, Rakuten, TripAdvisor, Vinted, Hermes · [API 文档 →](https://www.passxapi.com/docs)
 
 ```python
 # 静默模式
@@ -328,7 +328,7 @@ result = client.datadome_slider(
 
 ### Shape Security
 
-> Southwest Airlines, Starbucks, Citibank, Capital One, Macy's · [API 文档 →](https://passxapi.com/docs)
+> Southwest Airlines, Starbucks, Citibank, Capital One, Macy's · [API 文档 →](https://www.passxapi.com/docs)
 
 ```python
 result = client.shape(
@@ -344,7 +344,7 @@ result = client.shape(
 
 ### FunCaptcha
 
-> Microsoft, Roblox, GitHub, Snapchat, LinkedIn, Adobe, X · [API 文档 →](https://passxapi.com/docs)
+> Microsoft, Roblox, GitHub, Snapchat, LinkedIn, Adobe, X · [API 文档 →](https://www.passxapi.com/docs)
 
 ```python
 result = client.funcaptcha(
@@ -359,7 +359,7 @@ result = client.funcaptcha(
 
 ### AWS WAF
 
-> Amazon, Twitch, IMDb, Audible, Zappos · [API 文档 →](https://passxapi.com/docs)
+> Amazon, Twitch, IMDb, Audible, Zappos · [API 文档 →](https://www.passxapi.com/docs)
 
 ```python
 result = client.aws(
@@ -385,7 +385,7 @@ SDK 还支持以下类型，用法类似：
 - **ThreatMetrix** — `threatmetrix()` — Chase, Wells Fargo, PayPal
 - **TLS Forward** — `tls_forward()` — 任何 JA3/JA4 指纹检测站点
 
-完整参数请参考 [英文文档](README.md) 或 [API 文档](https://passxapi.com/docs)。
+完整参数请参考 [英文文档](README.md) 或 [API 文档](https://www.passxapi.com/docs)。
 
 ---
 
@@ -476,7 +476,7 @@ try:
 except AuthError:
     print("API Key 无效")
 except ZeroBalanceError:
-    print("余额不足，请充值：https://passxapi.com/app/billing/deposit")
+    print("余额不足，请充值：https://www.passxapi.com/app/billing/deposit")
 except CaptchaUnsolvableError:
     print("验证码无法求解")
 except BadParametersError as e:
@@ -543,12 +543,12 @@ while True:
 
 | | |
 |---|---|
-| **官网** | https://passxapi.com |
-| **注册** | https://passxapi.com/login |
-| **API Keys** | https://passxapi.com/app/api-keys |
-| **API 文档** | https://passxapi.com/docs |
-| **控制台** | https://passxapi.com/app/dashboard |
-| **价格** | https://passxapi.com/services |
+| **官网** | https://www.passxapi.com |
+| **注册** | https://www.passxapi.com/login |
+| **API Keys** | https://www.passxapi.com/app/api-keys |
+| **API 文档** | https://www.passxapi.com/docs |
+| **控制台** | https://www.passxapi.com/app/dashboard |
+| **价格** | https://www.passxapi.com/services |
 | **客服** | contact@passxapi.com |
 
 ## 许可证

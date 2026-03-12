@@ -1,21 +1,21 @@
 <h1 align="center">PassXAPI Python SDK</h1>
 
 <p align="center">
-  <b>Official Python SDK for <a href="https://passxapi.com">PassXAPI</a> captcha & anti-bot solving service</b>
+  <b>Official Python SDK for <a href="https://www.passxapi.com">PassXAPI</a> captcha & anti-bot solving service</b>
 </p>
 
 <p align="center">
   <a href="https://pypi.org/project/passxapi/"><img src="https://img.shields.io/pypi/v/passxapi?color=blue" alt="PyPI"></a>
   <a href="https://pypi.org/project/passxapi/"><img src="https://img.shields.io/pypi/pyversions/passxapi" alt="Python"></a>
   <a href="https://github.com/passxapi/passxapi-python/blob/main/LICENSE"><img src="https://img.shields.io/github/license/passxapi/passxapi-python" alt="License"></a>
-  <a href="https://passxapi.com/docs"><img src="https://img.shields.io/badge/docs-API%20Reference-green" alt="Docs"></a>
+  <a href="https://www.passxapi.com/docs"><img src="https://img.shields.io/badge/docs-API%20Reference-green" alt="Docs"></a>
 </p>
 
 <p align="center">
   <a href="https://github.com/passxapi/passxapi-python">Python</a> ·
   <a href="https://github.com/passxapi/passxapi-node">Node.js</a> ·
-  <a href="https://passxapi.com/docs">API Docs</a> ·
-  <a href="https://passxapi.com/services">Pricing</a> ·
+  <a href="https://www.passxapi.com/docs">API Docs</a> ·
+  <a href="https://www.passxapi.com/services">Pricing</a> ·
   <a href="https://github.com/passxapi/passxapi-python/blob/main/README_zh.md">中文文档</a>
 </p>
 
@@ -134,8 +134,8 @@ print(result["cookies"])     # {"cf_clearance": "..."}
 print(result["ua"])          # User-Agent string to use
 ```
 
-1. [Sign up](https://passxapi.com/login) — free, no credit card
-2. [Create API key](https://passxapi.com/app/api-keys)
+1. [Sign up](https://www.passxapi.com/login) — free, no credit card
+2. [Create API key](https://www.passxapi.com/app/api-keys)
 3. `pip install passxapi`
 
 ---
@@ -151,7 +151,7 @@ All methods follow the same pattern: **submit → poll → return result**. The 
 
 ### reCAPTCHA v3
 
-> Google, YouTube, LinkedIn, Steam, PayPal, Binance · [API docs →](https://passxapi.com/docs)
+> Google, YouTube, LinkedIn, Steam, PayPal, Binance · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.recaptcha_v3(
@@ -177,7 +177,7 @@ result = client.recaptcha_v3(
 
 ### hCaptcha
 
-> Cloudflare, Discord, Epic Games, Coinbase, NordVPN · [API docs →](https://passxapi.com/docs)
+> Cloudflare, Discord, Epic Games, Coinbase, NordVPN · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.hcaptcha(
@@ -197,7 +197,7 @@ result = client.hcaptcha(
 
 ### hCaptcha Pro
 
-> Cloudflare Enterprise, Coinbase, Binance, Kraken · [API docs →](https://passxapi.com/docs)
+> Cloudflare Enterprise, Coinbase, Binance, Kraken · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.hcaptcha_pro(
@@ -210,7 +210,7 @@ result = client.hcaptcha_pro(
 
 ### Cloudflare Turnstile
 
-> DHL, Notion, Canva, Vercel, GitLab, Figma, HubSpot · [API docs →](https://passxapi.com/docs)
+> DHL, Notion, Canva, Vercel, GitLab, Figma, HubSpot · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.cloudflare_turnstile(
@@ -230,7 +230,7 @@ result = client.cloudflare_turnstile(
 
 ### Cloudflare WAF
 
-> Shopify, Medium, Discord, OpenAI, Notion, Figma · [API docs →](https://passxapi.com/docs)
+> Shopify, Medium, Discord, OpenAI, Notion, Figma · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.cloudflare_waf(
@@ -244,7 +244,7 @@ result = client.cloudflare_waf(
 
 ### Akamai
 
-> Nike, Adidas, Delta Airlines, Walmart, Costco, Airbnb · [API docs →](https://passxapi.com/docs)
+> Nike, Adidas, Delta Airlines, Walmart, Costco, Airbnb · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.akamai(
@@ -266,7 +266,7 @@ result = client.akamai(
 
 ### Akamai sec_cpt
 
-> Nike, Adidas, Ticketmaster, Best Buy, Nordstrom · [API docs →](https://passxapi.com/docs)
+> Nike, Adidas, Ticketmaster, Best Buy, Nordstrom · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.akamai_sec_cpt(
@@ -287,7 +287,7 @@ result = client.akamai_sec_cpt(
 
 ### PerimeterX
 
-> Zillow, Craigslist, Indeed, StockX, Wayfair, Reddit · [API docs →](https://passxapi.com/docs)
+> Zillow, Craigslist, Indeed, StockX, Wayfair, Reddit · [API docs →](https://www.passxapi.com/docs)
 
 **Silent** (no visual challenge):
 ```python
@@ -317,7 +317,7 @@ result = client.perimeterx_challenge(
 
 ### Kasada
 
-> Kick, bet365, DraftKings, FanDuel, PlayStation, Twitch · [API docs →](https://passxapi.com/docs)
+> Kick, bet365, DraftKings, FanDuel, PlayStation, Twitch · [API docs →](https://www.passxapi.com/docs)
 
 **ct**:
 ```python
@@ -350,7 +350,7 @@ result = client.kasada_tl_payload(
 
 ### DataDome
 
-> Reddit, SoundCloud, Rakuten, TripAdvisor, Vinted, Hermes · [API docs →](https://passxapi.com/docs)
+> Reddit, SoundCloud, Rakuten, TripAdvisor, Vinted, Hermes · [API docs →](https://www.passxapi.com/docs)
 
 **Silent**:
 ```python
@@ -386,7 +386,7 @@ result = client.datadome_slider(
 
 ### Shape Security
 
-> Southwest Airlines, Starbucks, Citibank, Capital One, Macy's · [API docs →](https://passxapi.com/docs)
+> Southwest Airlines, Starbucks, Citibank, Capital One, Macy's · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.shape(
@@ -403,7 +403,7 @@ result = client.shape(
 
 ### FunCaptcha
 
-> Microsoft, Roblox, GitHub, Snapchat, LinkedIn, Adobe, X · [API docs →](https://passxapi.com/docs)
+> Microsoft, Roblox, GitHub, Snapchat, LinkedIn, Adobe, X · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.funcaptcha(
@@ -418,7 +418,7 @@ result = client.funcaptcha(
 
 ### AWS WAF
 
-> Amazon, Twitch, IMDb, Audible, Zappos · [API docs →](https://passxapi.com/docs)
+> Amazon, Twitch, IMDb, Audible, Zappos · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.aws(
@@ -432,7 +432,7 @@ result = client.aws(
 
 ### Vercel Challenge
 
-> TikTok Web, Hashnode, Cal.com, Loom, Neon · [API docs →](https://passxapi.com/docs)
+> TikTok Web, Hashnode, Cal.com, Loom, Neon · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.vercel_challenge(
@@ -445,7 +445,7 @@ result = client.vercel_challenge(
 
 ### Castle
 
-> Carta, Gusto, Plaid, Mercury, Brex, Notion · [API docs →](https://passxapi.com/docs)
+> Carta, Gusto, Plaid, Mercury, Brex, Notion · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.castle(
@@ -460,7 +460,7 @@ result = client.castle(
 
 ### Reese84
 
-> Glassdoor, Western Union, HSBC, Singapore Airlines · [API docs →](https://passxapi.com/docs)
+> Glassdoor, Western Union, HSBC, Singapore Airlines · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.reese84(
@@ -474,7 +474,7 @@ result = client.reese84(
 
 ### UTMVC
 
-> Glassdoor, Indeed, Kroger, AutoTrader, TripAdvisor · [API docs →](https://passxapi.com/docs)
+> Glassdoor, Indeed, Kroger, AutoTrader, TripAdvisor · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.utmvc(
@@ -493,7 +493,7 @@ result = client.utmvc(
 
 ### Sbsd
 
-> Ticketmaster, StubHub, Vivid Seats, SeatGeek, AXS · [API docs →](https://passxapi.com/docs)
+> Ticketmaster, StubHub, Vivid Seats, SeatGeek, AXS · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.sbsd(
@@ -508,7 +508,7 @@ result = client.sbsd(
 
 ### CaptchaFox
 
-> Zalando, Otto, Booking.com, BMW, Deutsche Telekom · [API docs →](https://passxapi.com/docs)
+> Zalando, Otto, Booking.com, BMW, Deutsche Telekom · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.captchafox(
@@ -522,7 +522,7 @@ result = client.captchafox(
 
 ### Forter
 
-> Nordstrom, Instacart, Sephora, Lululemon, Uber Eats · [API docs →](https://passxapi.com/docs)
+> Nordstrom, Instacart, Sephora, Lululemon, Uber Eats · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.forter(
@@ -537,7 +537,7 @@ result = client.forter(
 
 ### ThreatMetrix
 
-> Chase, Wells Fargo, Bank of America, PayPal, Robinhood · [API docs →](https://passxapi.com/docs)
+> Chase, Wells Fargo, Bank of America, PayPal, Robinhood · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.threatmetrix(
@@ -555,7 +555,7 @@ result = client.threatmetrix(
 
 ### TLS Forward
 
-> Any site with JA3/JA4 fingerprint detection · [API docs →](https://passxapi.com/docs)
+> Any site with JA3/JA4 fingerprint detection · [API docs →](https://www.passxapi.com/docs)
 
 ```python
 result = client.tls_forward(
@@ -653,7 +653,7 @@ try:
 except AuthError:
     print("Invalid API key")
 except ZeroBalanceError:
-    print("Top up at https://passxapi.com/app/billing/deposit")
+    print("Top up at https://www.passxapi.com/app/billing/deposit")
 except CaptchaUnsolvableError:
     print("Could not solve")
 except BadParametersError as e:
@@ -720,12 +720,12 @@ while True:
 
 | | |
 |---|---|
-| **Website** | https://passxapi.com |
-| **Sign Up** | https://passxapi.com/login |
-| **API Keys** | https://passxapi.com/app/api-keys |
-| **API Docs** | https://passxapi.com/docs |
-| **Dashboard** | https://passxapi.com/app/dashboard |
-| **Pricing** | https://passxapi.com/services |
+| **Website** | https://www.passxapi.com |
+| **Sign Up** | https://www.passxapi.com/login |
+| **API Keys** | https://www.passxapi.com/app/api-keys |
+| **API Docs** | https://www.passxapi.com/docs |
+| **Dashboard** | https://www.passxapi.com/app/dashboard |
+| **Pricing** | https://www.passxapi.com/services |
 | **Support** | contact@passxapi.com |
 
 ## License

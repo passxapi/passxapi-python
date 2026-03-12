@@ -6,7 +6,7 @@ import requests
 from passxapi.exceptions import raise_for_error, CaptchaUnsolvableError, PassXAPIError
 
 
-BASE_URL = "https://api.passxapi.com/api/v1"
+BASE_URL = "https://www.passxapi.com"
 
 
 class PassXAPI:
