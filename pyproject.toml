@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "passxapi"
+version = "2.0.0"
+description = "Official Python SDK for PassXAPI — solve reCAPTCHA, hCaptcha, Cloudflare, Akamai, PerimeterX, Kasada, DataDome, Shape and 27 anti-bot types"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [{name = "PassXAPI", email = "contact@passxapi.com"}]
+keywords = [
+    "captcha", "recaptcha", "hcaptcha", "turnstile", "cloudflare",
+    "akamai", "perimeterx", "kasada", "datadome", "shape",
+    "funcaptcha", "captcha-solver", "captcha-bypass", "anti-bot",
+    "2captcha", "anticaptcha", "capsolver", "passxapi",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["requests>=2.20.0"]
+
+[project.urls]
+Homepage = "https://passxapi.com"
+Documentation = "https://passxapi.com/docs"
+"Get API Key" = "https://passxapi.com/app/api-keys"
+Repository = "https://github.com/passxapi/passxapi-python"
+Issues = "https://github.com/passxapi/passxapi-python/issues"
+
+[tool.setuptools.packages.find]
+include = ["passxapi*"]
