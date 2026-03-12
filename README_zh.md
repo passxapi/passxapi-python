@@ -15,8 +15,14 @@
   <a href="https://github.com/passxapi/passxapi-python/blob/main/README.md">English</a> ·
   <b>中文</b> ·
   <a href="https://www.passxapi.com/docs">API 文档</a> ·
-  <a href="https://www.passxapi.com/services">价格</a>
+  <a href="https://www.passxapi.com/#pricing">价格</a>
 </p>
+
+---
+
+## 包月无限套餐
+
+**包月可用所有 27 种验证码，不限次数。** [查看套餐 →](https://www.passxapi.com/#pricing)
 
 ---
 
@@ -549,7 +555,7 @@ while True:
 | **API Keys** | https://www.passxapi.com/app/api-keys |
 | **API 文档** | https://www.passxapi.com/docs |
 | **控制台** | https://www.passxapi.com/app/dashboard |
-| **价格** | https://www.passxapi.com/services |
+| **价格** | https://www.passxapi.com/#pricing |
 | **客服** | contact@passxapi.com |
 
 ## 许可证

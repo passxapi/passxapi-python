@@ -15,9 +15,15 @@
   <a href="https://github.com/passxapi/passxapi-python">Python</a> ·
   <a href="https://github.com/passxapi/passxapi-node">Node.js</a> ·
   <a href="https://www.passxapi.com/docs">API Docs</a> ·
-  <a href="https://www.passxapi.com/services">Pricing</a> ·
+  <a href="https://www.passxapi.com/#pricing">Pricing</a> ·
   <a href="https://github.com/passxapi/passxapi-python/blob/main/README_zh.md">中文文档</a>
 </p>
+
+---
+
+## Monthly Unlimited Plan
+
+**Unlimited requests for ALL 27 captcha types.** [View plans →](https://www.passxapi.com/#pricing)
 
 ---
 
@@ -726,7 +732,7 @@ while True:
 | **API Keys** | https://www.passxapi.com/app/api-keys |
 | **API Docs** | https://www.passxapi.com/docs |
 | **Dashboard** | https://www.passxapi.com/app/dashboard |
-| **Pricing** | https://www.passxapi.com/services |
+| **Pricing** | https://www.passxapi.com/#pricing |
 | **Support** | contact@passxapi.com |
 
 ## License
